@@ -22,7 +22,7 @@ const config: Config = {
         28: '1.75rem',
         32: '2rem',
         40: '2.5rem',
-        64: '4rem',
+        80: '5rem',
       },
       lineHeight: {
         120: '120%',
