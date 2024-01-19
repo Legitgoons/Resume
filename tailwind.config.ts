@@ -2,7 +2,7 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -31,6 +31,15 @@ const config: Config = {
         normal: '400',
         semibold: '600',
         heavy: '900',
+      },
+      keyframes: {
+        blink: {
+          '0%, 50%': { opacity: '1' },
+          '51%, 100%': { opacity: '0' },
+        },
+      },
+      animation: {
+        blink: 'blink 1s linear infinite',
       },
     },
   },
