@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
 @font-face {
   font-family: 'SUIT';
   src:
