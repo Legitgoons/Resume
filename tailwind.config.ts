@@ -7,6 +7,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: { xs: '480px' },
       colors: {
         Blue: '#2093fe',
         Tertiary: '#EEF1F4',
