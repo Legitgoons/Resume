@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: '신입 프론트엔드 개발자 이의찬 포트폴리오',
+  title: '가치를 만드는 FE 개발자 이의찬입니다',
   description: '신입 프론트엔드 개발자 이의찬의 웹 포트폴리오 사이트입니다.',
 };
 
