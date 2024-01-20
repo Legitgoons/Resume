@@ -16,7 +16,7 @@ export default function Title() {
       <Image
         src={photo}
         alt="photo"
-        className="ml-6 w-52 self-center sm:ml-12"
+        className="ml-6 w-52 self-center md:ml-10 lg:ml-20"
       />
     </section>
   );
