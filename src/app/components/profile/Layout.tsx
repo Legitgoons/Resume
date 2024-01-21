@@ -10,7 +10,7 @@ export default function Layout({ title, children }: LayoutProps) {
         {title}
         <span className="text-blue-400">.</span>
       </h2>
-      <ul className="p2r flex w-2/3 flex-col gap-y-2">{children}</ul>
+      <ul className="p2r flex w-full flex-col gap-y-2 md:w-2/3">{children}</ul>
     </section>
   );
 }
