@@ -7,7 +7,7 @@ export default function Intro() {
         <h2 className="h1b">개발로 문제를 해결하기 위해</h2>
         <ul className="p2r flex flex-col gap-y-2">
           <BulletSentence>
-            책상 앞에서 문제를 상상하기 보단 유저와 공감하고자 노력합니다.
+            책상 앞에서 문제를 상상하는 대신 유저의 입장에서 생각합니다.
           </BulletSentence>
           <BulletSentence>
             도메인의 특성을 파악하고, 어떤 기능이 필요할지 고민합니다.

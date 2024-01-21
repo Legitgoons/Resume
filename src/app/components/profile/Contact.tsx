@@ -20,8 +20,8 @@ export default function Contact() {
       </BulletSentence>
       <BulletSentence>
         🌐
-        <Link href="https://cksxkr5193.tistory.com/">
-          &nbsp;https://cksxkr5193.tistory.com/
+        <Link href="https://cksxkr5193.tistory.com">
+          &nbsp;https://cksxkr5193.tistory.com
         </Link>
       </BulletSentence>
     </Layout>
