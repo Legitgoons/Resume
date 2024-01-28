@@ -7,6 +7,15 @@ body {
   justify-content: center;
 }
 
+a {
+  color: #2093fe;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #135898;
+}
+
 @font-face {
   font-family: 'SUIT';
   src:
