@@ -3,7 +3,7 @@ import BulletSentence from '../BulletSentence';
 export default function Intro() {
   return (
     <article>
-      <section className="flex flex-col gap-y-4">
+      <section className="flex flex-col gap-y-6">
         <h2 className="h1b">개발로 문제를 해결하기 위해</h2>
         <ul className="p2r flex flex-col gap-y-2">
           <BulletSentence>
