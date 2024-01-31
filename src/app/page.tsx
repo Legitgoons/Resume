@@ -1,11 +1,13 @@
-import { projectData } from '@/app/data/project';
-
+import Experience from './components/Experience/Experience';
 import Intro from './components/intro/Intro';
 import Title from './components/intro/Title';
 import ItemTitle from './components/ItemTitle';
 import Contact from './components/profile/Contact';
 import Education from './components/profile/Education';
+import Others from './components/project/Others';
 import Project from './components/project/Project';
+import { OtherProjectData } from './data/otherProject';
+import { projectData } from './data/project';
 
 export default function Home() {
   return (
@@ -15,7 +17,13 @@ export default function Home() {
       <Education />
       <Contact />
       <ItemTitle>Project</ItemTitle>
-      <Project projectData={projectData} />
+      <div className="flex flex-col">
+        <Project projectData={projectData} />
+        <ItemTitle>Others</ItemTitle>
+      </div>
+      <Others projectData={OtherProjectData} />
+      <ItemTitle>Experience</ItemTitle>
+      <Experience />
     </main>
   );
 }
