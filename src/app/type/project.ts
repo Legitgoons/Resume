@@ -43,12 +43,15 @@ interface Blog {
  * @param {Blog} blog : 프로젝트 관련 게시글
  */
 
-export interface Project {
+export interface ProjectDefault {
   title: string;
   period: string;
-  role: string;
   titleLinks: Link[];
   details: Detail[];
+}
+
+export interface Project extends ProjectDefault {
   reviews: Review[];
+  role: string;
   blog: Blog;
 }

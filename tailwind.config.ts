@@ -10,7 +10,6 @@ const config: Config = {
       screens: { xs: '480px' },
       colors: {
         Blue: '#2093fe',
-        Tertiary: '#EEF1F4',
         White: '#FFFFFF',
       },
       fontFamily: {
