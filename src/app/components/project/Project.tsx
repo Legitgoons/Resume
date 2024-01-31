@@ -16,10 +16,13 @@ interface ProjectProps {
 
 export default function Project({ projectData }: ProjectProps) {
   return (
-    <div className="flex flex-col gap-y-8">
+    <div className=" flex flex-col gap-y-8">
       {projectData.map(
         ({ title, period, role, titleLinks, details, reviews, blog }) => (
-          <article className="flex flex-col flex-wrap md:flex-row" key={title}>
+          <article
+            className="mb-12 flex flex-col flex-wrap md:flex-row"
+            key={title}
+          >
             <ProjectTitle title={title}>
               <li>{period}</li>
               <li>{role}</li>
