@@ -3,5 +3,5 @@ interface DetailHeadingProps {
 }
 
 export default function DetailHeading({ children }: DetailHeadingProps) {
-  return <h4 className="p2b mb-4">{children}</h4>;
+  return <h5 className="p2b mb-4">{children}</h5>;
 }
