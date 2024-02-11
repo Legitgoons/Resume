@@ -1,6 +1,15 @@
 import { Project } from '@/app/type/project';
 
 import githubIcon from '@/../public/assets/img/githubIcon.svg';
+import next from '@/../public/assets/img/next.svg';
+import react from '@/../public/assets/img/react.svg';
+import reactNative from '@/../public/assets/img/reactNative.svg';
+import reactQuery from '@/../public/assets/img/reactquery.svg';
+import recoil from '@/../public/assets/img/recoil.svg';
+import redux from '@/../public/assets/img/redux.svg';
+import styledComponent from '@/../public/assets/img/styledComponents.svg';
+import tailwindCSS from '@/../public/assets/img/tailwindCSS.svg';
+import typeScript from '@/../public/assets/img/typeScript.svg';
 
 export const projectData: Project[] = [
   {
@@ -15,16 +24,32 @@ export const projectData: Project[] = [
         text: 'Github',
       },
     ],
+    skills: [
+      {
+        imgSrc: reactNative,
+        imgAlt: 'reactNative',
+      },
+      {
+        imgSrc: typeScript,
+        imgAlt: 'typeScript',
+      },
+      {
+        imgSrc: styledComponent,
+        imgAlt: 'styledComponent',
+      },
+      {
+        imgSrc: redux,
+        imgAlt: 'redux',
+      },
+      {
+        imgSrc: reactQuery,
+        imgAlt: 'reactQuery',
+      },
+    ],
     details: [
       {
         title: 'Description',
         sentences: ['가족과 함께하는 당뇨 관리 App입니다.'],
-      },
-      {
-        title: 'Skills',
-        sentences: [
-          'React-Native, TypeScript, Styled-Component, Redux, React Query',
-        ],
       },
       {
         title: '구현 사항',
@@ -77,7 +102,7 @@ export const projectData: Project[] = [
                   href: 'https://cksxkr5193.tistory.com/24',
                   text: 'Interface와 Type의 차이점에 대해서 학습',
                 },
-                endText: '및 사용',
+                endText: ' 및 사용',
               },
             ],
           },
@@ -150,16 +175,26 @@ export const projectData: Project[] = [
         text: '📺시연 영상',
       },
     ],
+    skills: [
+      {
+        imgSrc: next,
+        imgAlt: 'next.js',
+      },
+      {
+        imgSrc: typeScript,
+        imgAlt: 'typeScript',
+      },
+      {
+        imgSrc: tailwindCSS,
+        imgAlt: 'tailwindCSS',
+      },
+    ],
     details: [
       {
         title: 'Description',
         sentences: [
           '잊기 쉬운 카드 혜택, 기프티콘을 지도를 이용해서 보여주는 핀테크 서비스입니다.',
         ],
-      },
-      {
-        title: 'Skills',
-        sentences: ['Next.js, TypeScript, Tailwind CSS, Jotai'],
       },
       {
         title: '구현 사항',
@@ -297,7 +332,7 @@ export const projectData: Project[] = [
             sentences: [
               'Props를 좀 더 효율적으로 다룰 수 있는 방법 학습하기',
               '상황에 맞는 폴더구조에 대해 좀 더 고민해봐야',
-              '개발 편의성을 위한 무지성 라이브러리 도입이 아닌, 정말 필요한지 고민하는 태도 갖추기',
+              '개발 편의성만을 위한 라이브러리 도입이 아닌, 정말 필요한지 고민하는 태도 갖추기',
               'Next.js와 React-Query에 대한 추가적인 학습 필요',
             ],
           },
@@ -346,8 +381,26 @@ export const projectData: Project[] = [
         text: '📺관리자 시연 영상',
       },
       {
-        href: 'https://github.com/Legitgoons/StarGate',
+        href: 'https://youtu.be/jkVMuuSQKvY?si=cv2JKvvXDwSrLxFu',
         text: '📺팬 시연 영상',
+      },
+    ],
+    skills: [
+      {
+        imgSrc: react,
+        imgAlt: 'react',
+      },
+      {
+        imgSrc: typeScript,
+        imgAlt: 'typeScript',
+      },
+      {
+        imgSrc: tailwindCSS,
+        imgAlt: 'tailwindCSS',
+      },
+      {
+        imgSrc: recoil,
+        imgAlt: 'recoil',
       },
     ],
     details: [
@@ -356,10 +409,6 @@ export const projectData: Project[] = [
         sentences: [
           '화상통화를 이용한 비대면 팬사인회 서비스입니다. 현직 개발자의 심사를 통해 삼성청년SW아카데미 우수 프로젝트로 선정되었습니다.',
         ],
-      },
-      {
-        title: 'Skills',
-        sentences: ['React, TypeScript, Tailwind CSS, Recoil'],
       },
       {
         title: '구현',
@@ -453,12 +502,6 @@ export const projectData: Project[] = [
                 },
                 endText: '',
               },
-            ],
-          },
-          {
-            heading: '기타',
-            sentences: [
-              '팀장으로서 편안한 분위기를 만들어 소통에 대한 망설임을 줄임',
             ],
           },
         ],
