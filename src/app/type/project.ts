@@ -13,6 +13,11 @@ interface LinkSentence {
 
 export type SentenceItem = string | LinkSentence;
 
+interface Skills {
+  imgSrc: string;
+  imgAlt: string;
+}
+
 interface Detail {
   title: string;
   sentences: SentenceItem[];
@@ -38,6 +43,7 @@ interface Blog {
  * @param {string} period : 진행 기간
  * @param {string} role : 역할
  * @param {Link[]} links : 제목 하단 링크
+ * @param {Skills[]} skills: 프로젝트 사용 기술
  * @param {Detail[]} details : 프로젝트 상세 내역
  * @param {Review[]} reviews : 프로젝트 리뷰
  * @param {Blog} blog : 프로젝트 관련 게시글
@@ -51,6 +57,7 @@ export interface ProjectDefault {
 }
 
 export interface Project extends ProjectDefault {
+  skills: Skills[];
   reviews: Review[];
   role: string;
   blog: Blog;
