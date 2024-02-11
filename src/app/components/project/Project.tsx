@@ -18,7 +18,16 @@ export default function Project({ projectData }: ProjectProps) {
   return (
     <div className=" flex flex-col gap-y-8">
       {projectData.map(
-        ({ title, period, role, titleLinks, details, reviews, blog }) => (
+        ({
+          title,
+          period,
+          role,
+          titleLinks,
+          skills,
+          details,
+          reviews,
+          blog,
+        }) => (
           <article
             className="mb-12 flex flex-col flex-wrap md:flex-row"
             key={title}
@@ -44,6 +53,20 @@ export default function Project({ projectData }: ProjectProps) {
               ))}
             </ProjectTitle>
             <section className="flex w-full flex-col gap-y-4 md:w-2/3">
+              <ProjectDetail title="Skills">
+                <div className="flex">
+                  {skills.map((skill) => (
+                    <Image
+                      key={skill.imgSrc}
+                      src={skill.imgSrc}
+                      alt={skill.imgAlt}
+                      width={100}
+                      height={20}
+                      className="mx-1 h-6 w-20 md:h-7 md:w-24"
+                    />
+                  ))}
+                </div>
+              </ProjectDetail>
               {details.map((detail) => (
                 <ProjectDetail key={detail.title} title={detail.title}>
                   <ProjectSentenceList sentences={detail.sentences} />
