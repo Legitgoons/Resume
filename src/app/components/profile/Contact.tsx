@@ -15,19 +15,19 @@ export default function Contact() {
       <BulletSentence>
         <Link href="https://github.com/Legitgoons" className="flex">
           <Image src={Github} alt="Github" className="mx-1 size-4 sm:size-5" />
-          &nbsp;https://github.com/Legitgoons
+          &nbsp;github.com/Legitgoons
         </Link>
       </BulletSentence>
       <BulletSentence>
         🌐
         <Link href="https://cksxkr5193.tistory.com">
-          &nbsp;https://cksxkr5193.tistory.com
+          &nbsp;cksxkr5193.tistory.com
         </Link>
       </BulletSentence>
       <BulletSentence>
         📝
         <Link href="https://web-portfolio-legitgoons.vercel.app">
-          &nbsp;https://web-portfolio-legitgoons.vercel.app
+          &nbsp;web-portfolio-legitgoons.vercel.app
         </Link>
       </BulletSentence>
     </Layout>

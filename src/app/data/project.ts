@@ -78,7 +78,6 @@ export const projectData: Project[] = [
           {
             heading: '개발',
             sentences: [
-              '모바일 환경을 우선적으로 고려하여 React-Native를 도입',
               {
                 text: '클린하고 일관적인 프로덕트를 위해 ',
                 link: {
@@ -154,7 +153,7 @@ export const projectData: Project[] = [
         },
         {
           href: 'https://cksxkr5193.tistory.com/21',
-          text: '나의 코드리뷰(클린하고 일관적인 프로덕트를 위해)',
+          text: '코드리뷰로 클린하고 일관적인 프로덕트 만들기',
         },
       ],
     },
@@ -206,15 +205,14 @@ export const projectData: Project[] = [
       {
         title: '문제 해결',
         sentences: [
-          '로그인 여부에 따라서 각각 메인 페이지/로그인 페이지로 이동시켜야 하는 이슈가 있었습니다.',
-          '토큰 여부에 따라 이동시키는 Hook를 구현하여 로그인 관련 페이지와 Navbar에 넣어서 해결하였습니다.',
+          '타이머가 정상적으로 작동하지 않는 이슈가 있었습니다.',
           {
-            text: '자세한 사항은 ',
+            text: '',
             link: {
               href: 'https://cksxkr5193.tistory.com/41',
-              text: '블로그를 참조',
+              text: 'setInterval과 setTimeout이 Next.js에서 어떻게 작동하는지 조사',
             },
-            endText: ' 부탁드립니다.',
+            endText: '하여 해결하였습니다.',
           },
         ],
       },
@@ -347,8 +345,12 @@ export const projectData: Project[] = [
           text: '💳 카드 혜택, 기프티콘 서비스 <모익> 회고',
         },
         {
+          href: 'https://cksxkr5193.tistory.com/42',
+          text: '런타임을 고려해 타이머 구현하기',
+        },
+        {
           href: 'https://cksxkr5193.tistory.com/41',
-          text: '로그인 여부에 따른 접근 제한 처리하기 / Next.js',
+          text: '로그인 여부에 따른 접근 제한 처리하기',
         },
         {
           href: 'https://cksxkr5193.tistory.com/11',
@@ -421,14 +423,21 @@ export const projectData: Project[] = [
         title: '문제 해결',
         sentences: [
           '팬사인회 입장 대기시간을 1000ms마다 1초가 줄어들도록 구현했으나, 비활성화 시 최대 60000ms까지 시간이 증가하였습니다.',
-          'Page Visibility API를 활용해 사용자가 해당 탭으로 돌아올 때, 다시 데이터를 가져오도록 하여 해결하였습니다.',
           {
-            text: '자세한 사항은 ',
+            text: 'Page Visibility API를 활용해 ',
             link: {
               href: 'https://cksxkr5193.tistory.com/38',
-              text: '블로그를 참조',
+              text: '사용자가 해당 탭으로 돌아올 때, 다시 데이터를 가져오도록 하여 해결',
             },
-            endText: ' 부탁드립니다.',
+            endText: '하였습니다.',
+          },
+          {
+            text: '또한 setInterval이 Firefox에서 정상적으로 작동하지 않는 이슈가 있어 ',
+            link: {
+              href: 'https://cksxkr5193.tistory.com/45',
+              text: 'userAgent를 사용, 유저에게 경고문을 보여주도록',
+            },
+            endText: ' 하였습니다.',
           },
         ],
       },
@@ -566,6 +575,10 @@ export const projectData: Project[] = [
         {
           href: 'https://cksxkr5193.tistory.com/40',
           text: 'Template으로 중복되는 JSX문 줄이기',
+        },
+        {
+          href: 'https://cksxkr5193.tistory.com/45',
+          text: 'firefox에서의 setInterval 문제 해결',
         },
       ],
     },
