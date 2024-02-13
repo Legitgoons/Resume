@@ -54,7 +54,7 @@ export default function Project({ projectData }: ProjectProps) {
             </ProjectTitle>
             <section className="flex w-full flex-col gap-y-4 md:w-2/3">
               <ProjectDetail title="Skills">
-                <div className="flex">
+                <div className="flex flex-col gap-y-2 md:flex-row md:gap-x-2">
                   {skills.map((skill) => (
                     <Image
                       key={skill.imgSrc}
@@ -62,7 +62,7 @@ export default function Project({ projectData }: ProjectProps) {
                       alt={skill.imgAlt}
                       width={100}
                       height={20}
-                      className="mx-1 h-6 w-20 md:h-7 md:w-24"
+                      className="h-6 w-20 md:h-7 md:w-24"
                     />
                   ))}
                 </div>
