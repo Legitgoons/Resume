@@ -205,11 +205,11 @@ export const projectData: Project[] = [
       {
         title: '문제 해결',
         sentences: [
-          '타이머가 정상적으로 작동하지 않는 이슈가 있었습니다.',
+          '타이머에서 오차가 발생하는 이슈가 있었습니다.',
           {
             text: '',
             link: {
-              href: 'https://cksxkr5193.tistory.com/41',
+              href: 'https://cksxkr5193.tistory.com/42',
               text: 'setInterval과 setTimeout이 Next.js에서 어떻게 작동하는지 조사',
             },
             endText: '하여 해결하였습니다.',
