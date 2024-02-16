@@ -20,7 +20,7 @@ export const projectData: Project[] = [
       {
         href: 'https://github.com/Legitgoons/SugarManager',
         imgSrc: githubIcon,
-        imgAlt: 'Github',
+        imgAlt: 'GithubLink',
         text: 'Github',
       },
     ],
@@ -166,7 +166,7 @@ export const projectData: Project[] = [
       {
         href: 'https://github.com/Fintech-Moic/Moic',
         imgSrc: githubIcon,
-        imgAlt: 'Github',
+        imgAlt: 'GithubLink',
         text: 'Github',
       },
       {
@@ -310,8 +310,8 @@ export const projectData: Project[] = [
                 },
                 endText: ' 정도가 지나쳐 부작용을 겪음',
               },
-              'React-hook-form 라이브러리를 사용했으나 내부 로직을 완벽히 이해하지 못해 Validation 부분 이슈가 있음',
-              'Next.js와 React-Query를 동시에 도입, 러닝 커브로 인해 완전히 이해하지 못한채로 사용',
+              'React-hook-form 라이브러리를 사용했으나 내부 로직을 완벽히 이해하지 못해 어려움을 겪음',
+              'Next.js를 처음 사용한 프로젝트이기에, Next.js를 학습하는데 많은 시간이 소요됨',
             ],
           },
           {
@@ -329,9 +329,9 @@ export const projectData: Project[] = [
             heading: '개발',
             sentences: [
               'Props를 좀 더 효율적으로 다룰 수 있는 방법 학습하기',
-              '상황에 맞는 폴더구조에 대해 좀 더 고민해봐야',
+              '상황에 맞는 폴더구조에 대해 좀 더 고민 해보기',
               '개발 편의성만을 위한 라이브러리 도입이 아닌, 정말 필요한지 고민하는 태도 갖추기',
-              'Next.js와 React-Query에 대한 추가적인 학습 필요',
+              'Next.js에 대한 추가적인 학습 필요',
             ],
           },
         ],
@@ -375,7 +375,7 @@ export const projectData: Project[] = [
       {
         href: 'https://github.com/Legitgoons/StarGate',
         imgSrc: githubIcon,
-        imgAlt: 'Github',
+        imgAlt: 'GithubLink',
         text: 'Github',
       },
       {
