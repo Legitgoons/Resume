@@ -57,7 +57,7 @@ export default function Project({ projectData }: ProjectProps) {
                 <div className="flex flex-col gap-y-2 md:flex-row md:gap-x-2">
                   {skills.map((skill) => (
                     <Image
-                      key={skill.imgSrc}
+                      key={skill.imgAlt}
                       src={skill.imgSrc}
                       alt={skill.imgAlt}
                       width={100}
@@ -77,9 +77,9 @@ export default function Project({ projectData }: ProjectProps) {
                   {review.details.map((detail) => (
                     <div key={detail.heading}>
                       <DetailHeading>{detail.heading}</DetailHeading>
-                      <div className="flex flex-col gap-y-2">
+                      <ul className="flex flex-col gap-y-2">
                         <ProjectSentenceList sentences={detail.sentences} />
-                      </div>
+                      </ul>
                     </div>
                   ))}
                 </ProjectDetail>

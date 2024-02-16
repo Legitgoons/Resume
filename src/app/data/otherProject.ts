@@ -10,7 +10,7 @@ export const OtherProjectData: ProjectDefault[] = [
       {
         href: 'https://github.com/Legitgoons/eCommerce-ourHome',
         imgSrc: githubIcon,
-        imgAlt: 'Github',
+        imgAlt: 'GithubLink',
         text: 'Github',
       },
     ],
@@ -38,7 +38,7 @@ export const OtherProjectData: ProjectDefault[] = [
       {
         href: 'https://github.com/Legitgoons/Everyones-Subway',
         imgSrc: githubIcon,
-        imgAlt: 'Github',
+        imgAlt: 'GithubLink',
         text: 'Github',
       },
     ],
