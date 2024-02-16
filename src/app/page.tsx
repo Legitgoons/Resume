@@ -1,3 +1,5 @@
+import { connectDB } from '@/app/util/data';
+
 import Experience from './components/Experience/Experience';
 import Intro from './components/intro/Intro';
 import Title from './components/intro/Title';
@@ -8,6 +10,10 @@ import Others from './components/project/Others';
 import Project from './components/project/Project';
 import { OtherProjectData } from './data/otherProject';
 import { projectData } from './data/project';
+import { ExperienceResponse } from './type/experience';
+
+const db = (await connectDB).db('Portfolio');
+const exp = await db.collection<ExperienceResponse>('Exp').find().toArray();
 
 export default function Home() {
   return (
@@ -23,7 +29,7 @@ export default function Home() {
       </div>
       <Others projectData={OtherProjectData} />
       <ItemTitle>Experience</ItemTitle>
-      <Experience />
+      <Experience expData={exp} />
     </main>
   );
 }
