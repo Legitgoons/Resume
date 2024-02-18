@@ -21,7 +21,7 @@ export default async function Experience({ expData }: ExperienceProps) {
             </ul>
           </ExperienceTitle>
           <section className="flex w-full flex-col gap-y-4">
-            <ExperienceDetail title="Detail">
+            <ExperienceDetail>
               {details.map((detail) => (
                 <BulletSentence key={detail}>{detail}</BulletSentence>
               ))}
