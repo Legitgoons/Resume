@@ -29,7 +29,7 @@ export default function Project({ projectData }: ProjectProps) {
           blog,
         }) => (
           <article
-            className="mb-12 flex flex-col flex-wrap md:flex-row"
+            className=" mb-12 flex flex-col flex-wrap md:relative md:flex-row"
             key={title}
           >
             <ProjectTitle title={title}>

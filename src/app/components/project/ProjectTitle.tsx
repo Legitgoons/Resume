@@ -7,7 +7,7 @@ interface ProjectTitleProps {
 
 export default function ProjectTitle({ title, children }: ProjectTitleProps) {
   return (
-    <div className="mb-4 flex w-full flex-col items-start gap-y-3 md:w-1/3">
+    <div className="mb-4 flex h-max w-full flex-col items-start gap-y-3 md:sticky md:top-10 md:w-1/3">
       <h3 className="h3b">
         {title}
         <ColorPeriod />
