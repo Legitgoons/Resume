@@ -30,6 +30,7 @@ const config: Config = {
       },
       lineHeight: {
         120: '120%',
+        140: '140%',
       },
       fontWeight: {
         normal: '400',

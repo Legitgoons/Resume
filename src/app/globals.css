@@ -67,25 +67,25 @@ a:visited {
 }
 
 .p1b {
-  @apply font-suit text-20 font-bold leading-120 sm:text-24;
+  @apply leading-140 font-suit text-20 font-bold sm:text-24;
 }
 
 .p1r {
-  @apply font-suit text-20 font-normal leading-120 sm:text-24;
+  @apply leading-140 font-suit text-20 font-normal sm:text-24;
 }
 
 .p2b {
-  @apply font-suit text-16 font-bold leading-120 sm:text-20;
+  @apply leading-140 font-suit text-16 font-bold sm:text-20;
 }
 
 .p2r {
-  @apply font-suit text-16 font-normal leading-120 sm:text-20;
+  @apply leading-140 font-suit text-16 font-normal sm:text-20;
 }
 
 .p3b {
-  @apply font-suit text-12 font-bold leading-120 sm:text-16;
+  @apply leading-140 font-suit text-12 font-bold sm:text-16;
 }
 
 .p3r {
-  @apply font-suit text-12 font-normal leading-120 sm:text-16;
+  @apply leading-140 font-suit text-12 font-normal sm:text-16;
 }
