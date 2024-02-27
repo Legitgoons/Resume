@@ -8,12 +8,19 @@ import Contact from './components/profile/Contact';
 import Education from './components/profile/Education';
 import Others from './components/project/Others';
 import Project from './components/project/Project';
-import { OtherProjectData } from './data/otherProject';
-import { projectData } from './data/project';
 import { ExperienceResponse } from './type/experience';
+import { ProjectDefaultResponse, ProjectResponse } from './type/project';
 
 const db = (await connectDB).db('Portfolio');
 const exp = await db.collection<ExperienceResponse>('Exp').find().toArray();
+const projects = await db
+  .collection<ProjectResponse>('Projects')
+  .find()
+  .toArray();
+const otherProjects = await db
+  .collection<ProjectDefaultResponse>('otherProjects')
+  .find()
+  .toArray();
 
 export default function Home() {
   return (
@@ -22,12 +29,12 @@ export default function Home() {
       <Intro />
       <Education />
       <Contact />
-      <ItemTitle>Project</ItemTitle>
+      <ItemTitle>Projects</ItemTitle>
       <div className="flex flex-col">
-        <Project projectData={projectData} />
-        <ItemTitle>Others</ItemTitle>
+        <Project projectData={projects} />
+        <ItemTitle>Other Projects</ItemTitle>
       </div>
-      <Others projectData={OtherProjectData} />
+      <Others projectData={otherProjects} />
       <ItemTitle>Experience</ItemTitle>
       <Experience expData={exp} />
     </main>
