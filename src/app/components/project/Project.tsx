@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Project } from '@/app/type/project';
+import { ProjectResponse } from '@/app/type/project';
 
 import BulletSentence from '../BulletSentence';
 
@@ -11,7 +11,7 @@ import ProjectSentenceList from './ProjectSentenceList';
 import ProjectTitle from './ProjectTitle';
 
 interface ProjectProps {
-  projectData: Project[];
+  projectData: ProjectResponse[];
 }
 
 export default function Project({ projectData }: ProjectProps) {
@@ -72,18 +72,21 @@ export default function Project({ projectData }: ProjectProps) {
                   <ProjectSentenceList sentences={detail.sentences} />
                 </ProjectDetail>
               ))}
-              {reviews.map((review) => (
-                <ProjectDetail key={review.title} title={review.title}>
-                  {review.details.map((detail) => (
-                    <div key={detail.heading}>
-                      <DetailHeading>{detail.heading}</DetailHeading>
-                      <ul className="flex flex-col gap-y-2">
-                        <ProjectSentenceList sentences={detail.sentences} />
-                      </ul>
-                    </div>
-                  ))}
-                </ProjectDetail>
-              ))}
+              <ProjectDetail title="KPT">
+                {reviews.map((review) => (
+                  <section key={review.title}>
+                    <h5 className="p1b">{review.title}</h5>
+                    {review.details.map((detail) => (
+                      <div key={detail.heading}>
+                        <DetailHeading>{detail.heading}</DetailHeading>
+                        <ul className="flex flex-col gap-y-2">
+                          <ProjectSentenceList sentences={detail.sentences} />
+                        </ul>
+                      </div>
+                    ))}
+                  </section>
+                ))}
+              </ProjectDetail>
               {blog && (
                 <ProjectDetail title={blog.title}>
                   {blog.links.map((link) => (
