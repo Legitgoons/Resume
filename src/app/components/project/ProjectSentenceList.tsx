@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
-import { SentenceItem } from '@/app/type/project';
+import { LinkSentence } from '@/app/type/project';
 
 import BulletSentence from '../BulletSentence';
 
 interface ProjectSentenceListProps {
-  sentences: SentenceItem[];
+  sentences: LinkSentence[];
 }
 
 export default function ProjectSentenceList({
@@ -14,8 +14,10 @@ export default function ProjectSentenceList({
   return (
     <>
       {sentences.map((sentence) => {
-        if (typeof sentence === 'string') {
-          return <BulletSentence key={sentence}>{sentence}</BulletSentence>;
+        if (typeof sentence.link.href === 'undefined') {
+          return (
+            <BulletSentence key={sentence.text}>{sentence.text}</BulletSentence>
+          );
         }
         return (
           <BulletSentence key={sentence.link.href}>
