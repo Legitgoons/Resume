@@ -1,3 +1,5 @@
+import { WithId, Document } from 'mongodb';
+
 interface Link {
   href: string;
   imgSrc?: string;
@@ -5,13 +7,11 @@ interface Link {
   text: string;
 }
 
-interface LinkSentence {
+export interface LinkSentence {
   text: string;
   link: Link;
-  endText: string;
+  endText?: string;
 }
-
-export type SentenceItem = string | LinkSentence;
 
 interface Skills {
   imgSrc: string;
@@ -20,12 +20,12 @@ interface Skills {
 
 interface Detail {
   title: string;
-  sentences: SentenceItem[];
+  sentences: LinkSentence[];
 }
 
 interface ReviewDetail {
   heading: string;
-  sentences: SentenceItem[];
+  sentences: LinkSentence[];
 }
 
 interface Review {
@@ -49,14 +49,14 @@ interface Blog {
  * @param {Blog} blog : 프로젝트 관련 게시글
  */
 
-export interface ProjectDefault {
+export interface ProjectDefaultResponse extends WithId<Document> {
   title: string;
   period: string;
   titleLinks: Link[];
   details: Detail[];
 }
 
-export interface Project extends ProjectDefault {
+export interface ProjectResponse extends ProjectDefaultResponse {
   skills: Skills[];
   reviews: Review[];
   role: string;

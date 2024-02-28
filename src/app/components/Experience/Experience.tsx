@@ -12,7 +12,7 @@ interface ExperienceProps {
 export default async function Experience({ expData }: ExperienceProps) {
   return (
     <div className="flex flex-col gap-y-8">
-      {expData.map(({ title, period, role, details }) => (
+      {expData.map(({ title, period, summary, role, details }) => (
         <article key={title} className="flex flex-col flex-wrap">
           <ExperienceTitle title={title}>
             <ul>
@@ -22,6 +22,7 @@ export default async function Experience({ expData }: ExperienceProps) {
           </ExperienceTitle>
           <section className="flex w-full flex-col gap-y-4">
             <ExperienceDetail>
+              <li className="p3b">{summary}</li>
               {details.map((detail) => (
                 <BulletSentence key={detail}>{detail}</BulletSentence>
               ))}

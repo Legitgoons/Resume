@@ -5,8 +5,6 @@ import BulletSentence from '../BulletSentence';
 
 import Layout from './Layout';
 
-import Github from '@/../public/assets/img/githubIcon.svg';
-
 export default function Contact() {
   return (
     <Layout title="Contact">
@@ -14,7 +12,13 @@ export default function Contact() {
       <BulletSentence>📧 cksxkr5193@naver.com</BulletSentence>
       <BulletSentence>
         <Link href="https://github.com/Legitgoons" className="flex">
-          <Image src={Github} alt="Github" className="mx-1 size-4 sm:size-5" />
+          <Image
+            src="https://i.ibb.co/zJG1S6x/github.webp"
+            alt="Github"
+            className="mx-1 size-4 sm:size-5"
+            width={16}
+            height={16}
+          />
           &nbsp;github.com/Legitgoons
         </Link>
       </BulletSentence>
