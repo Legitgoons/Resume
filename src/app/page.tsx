@@ -29,12 +29,14 @@ export default function Home() {
       <Intro />
       <Education />
       <Contact />
+      <hr />
       <ItemTitle>Projects</ItemTitle>
       <div className="flex flex-col">
         <Project projectData={projects} />
         <ItemTitle>Other Projects</ItemTitle>
       </div>
       <OtherProject projectData={otherProjects} />
+      <hr />
       <ItemTitle>Experience</ItemTitle>
       <Experience expData={exp} />
     </main>

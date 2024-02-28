@@ -16,7 +16,7 @@ export default function OtherProject({ projectData }: ProjectProps) {
     <div className="flex flex-col gap-y-8">
       {projectData.map(({ title, period, titleLinks, details }) => (
         <article className="flex flex-col flex-wrap md:flex-row" key={title}>
-          <ProjectTitle title={title}>
+          <ProjectTitle title={title} isSticky={false}>
             <li>{period}</li>
             {titleLinks.map((link) => (
               <li key={link.href}>
