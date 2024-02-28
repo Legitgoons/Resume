@@ -6,7 +6,7 @@ import Title from './components/intro/Title';
 import ItemTitle from './components/ItemTitle';
 import Contact from './components/profile/Contact';
 import Education from './components/profile/Education';
-import Others from './components/project/Others';
+import OtherProject from './components/project/OtherProject';
 import Project from './components/project/Project';
 import { ExperienceResponse } from './type/experience';
 import { ProjectDefaultResponse, ProjectResponse } from './type/project';
@@ -34,7 +34,7 @@ export default function Home() {
         <Project projectData={projects} />
         <ItemTitle>Other Projects</ItemTitle>
       </div>
-      <Others projectData={otherProjects} />
+      <OtherProject projectData={otherProjects} />
       <ItemTitle>Experience</ItemTitle>
       <Experience expData={exp} />
     </main>

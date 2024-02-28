@@ -1,17 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { ProjectDefault } from '@/app/type/project';
+import { ProjectDefaultResponse } from '@/app/type/project';
 
 import ProjectDetail from './ProjectDetail';
 import ProjectSentenceList from './ProjectSentenceList';
 import ProjectTitle from './ProjectTitle';
 
 interface ProjectProps {
-  projectData: ProjectDefault[];
+  projectData: ProjectDefaultResponse[];
 }
 
-export default function Others({ projectData }: ProjectProps) {
+export default function OtherProject({ projectData }: ProjectProps) {
   return (
     <div className="flex flex-col gap-y-8">
       {projectData.map(({ title, period, titleLinks, details }) => (
