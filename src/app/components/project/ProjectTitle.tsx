@@ -12,7 +12,7 @@ export default function ProjectTitle({ title, children }: ProjectTitleProps) {
         {title}
         <ColorPeriod />
       </h3>
-      <ul className="p3r flex flex-col gap-y-1">{children}</ul>
+      <ul className="p3b flex flex-col gap-y-1">{children}</ul>
     </div>
   );
 }
