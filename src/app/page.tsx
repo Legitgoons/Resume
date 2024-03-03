@@ -31,8 +31,9 @@ export default function Home() {
       <Contact />
       <hr />
       <ItemTitle>Projects</ItemTitle>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-y-12">
         <Project projectData={projects} />
+        <hr />
         <ItemTitle>Other Projects</ItemTitle>
       </div>
       <OtherProject projectData={otherProjects} />
