@@ -30,6 +30,7 @@ export default function Home() {
       <Intro />
       <Education />
       <Contact contactData={contactData} />
+      <hr />
       <ItemTitle>Projects</ItemTitle>
       <div className="flex flex-col gap-y-12">
         <Project projectData={projects} />
@@ -37,6 +38,7 @@ export default function Home() {
         <ItemTitle>Other Projects</ItemTitle>
       </div>
       <OtherProject projectData={otherProjects} />
+      <hr />
       <ItemTitle>Experience</ItemTitle>
       <Experience expData={exp} />
     </main>
