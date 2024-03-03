@@ -8,6 +8,7 @@ import Contact from './components/profile/Contact';
 import Education from './components/profile/Education';
 import OtherProject from './components/project/OtherProject';
 import Project from './components/project/Project';
+import { contactData } from './data.ts/contactData';
 import { ExperienceResponse } from './type/experience';
 import { ProjectDefaultResponse, ProjectResponse } from './type/project';
 
@@ -28,7 +29,7 @@ export default function Home() {
       <Title />
       <Intro />
       <Education />
-      <Contact />
+      <Contact contactData={contactData} />
       <hr />
       <ItemTitle>Projects</ItemTitle>
       <div className="flex flex-col gap-y-12">
