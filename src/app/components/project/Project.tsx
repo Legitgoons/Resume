@@ -16,7 +16,7 @@ interface ProjectProps {
 
 export default function Project({ projectData }: ProjectProps) {
   return (
-    <div className=" flex flex-col gap-y-8">
+    <div className=" flex flex-col gap-y-12">
       {projectData.map(
         ({
           title,
@@ -29,7 +29,7 @@ export default function Project({ projectData }: ProjectProps) {
           blog,
         }) => (
           <article
-            className=" mb-12 flex flex-col flex-wrap md:relative md:flex-row"
+            className="flex flex-col flex-wrap md:relative md:flex-row"
             key={title}
           >
             <ProjectTitle title={title}>

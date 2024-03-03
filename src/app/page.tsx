@@ -30,8 +30,9 @@ export default function Home() {
       <Education />
       <Contact />
       <ItemTitle>Projects</ItemTitle>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-y-12">
         <Project projectData={projects} />
+        <hr />
         <ItemTitle>Other Projects</ItemTitle>
       </div>
       <OtherProject projectData={otherProjects} />
