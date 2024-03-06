@@ -60,13 +60,12 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'Ay2fKJa1Zp8gBgeHh9jSDr3JboRNy8x0h8niXS9jNhQ',
+    google: 'nvgGKg0YhKgIRwFE4mkZLEttHXbifi9n5uY-D90S36E',
     other: {
       'naver-site-verification': '4bbc96fa91d151689912e4998ffe04ffba5c4813',
     },
   },
 };
-
 export default function RootLayout({
   children,
 }: {
