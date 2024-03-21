@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { ContactItem } from '@/app/type/contact';
 
-import BulletSentence from '../BulletSentence';
+import BulletSentence from '../shared/BulletSentence';
 
 import Layout from './Layout';
 

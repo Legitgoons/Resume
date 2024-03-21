@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { ProjectResponse } from '@/app/type/project';
 
-import BulletSentence from '../BulletSentence';
+import BulletSentence from '../shared/BulletSentence';
 
 import DetailHeading from './DetailHeading';
 import ProjectDetail from './ProjectDetail';

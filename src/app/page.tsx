@@ -1,13 +1,13 @@
 import { connectDB } from '@/app/util/data';
 
-import Experience from './components/Experience/Experience';
+import Experience from './components/experience/Experience';
 import Intro from './components/intro/Intro';
 import Title from './components/intro/Title';
-import ItemTitle from './components/ItemTitle';
 import Contact from './components/profile/Contact';
 import Education from './components/profile/Education';
 import OtherProject from './components/project/OtherProject';
 import Project from './components/project/Project';
+import ItemTitle from './components/shared/ItemTitle';
 import { contactData } from './data.ts/contactData';
 import { ExperienceResponse } from './type/experience';
 import { ProjectDefaultResponse, ProjectResponse } from './type/project';

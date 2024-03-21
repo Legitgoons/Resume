@@ -1,6 +1,6 @@
 import { ExperienceResponse } from '@/app/type/experience';
 
-import BulletSentence from '../BulletSentence';
+import BulletSentence from '../shared/BulletSentence';
 
 import ExperienceDetail from './ExperienceDetail';
 import ExperienceTitle from './ExperienceTitle';

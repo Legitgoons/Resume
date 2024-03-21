@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { LinkSentence } from '@/app/type/project';
 
-import BulletSentence from '../BulletSentence';
+import BulletSentence from '../shared/BulletSentence';
 
 interface ProjectSentenceListProps {
   sentences: LinkSentence[];
