@@ -2,16 +2,20 @@
 
 import { useEffect, useState } from 'react';
 
+const calculateScroll = () => {
+  const totalScroll = document.documentElement.scrollTop;
+  const windowHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  const scrollPercent = totalScroll / windowHeight;
+  return scrollPercent;
+};
+
 export default function Progressbar() {
   const [scroll, setScroll] = useState(0);
 
   const handleScroll = () => {
-    const totalScroll = document.documentElement.scrollTop;
-    const windowHeight =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    const scrollPercent = `${totalScroll / windowHeight}`;
-    setScroll(Number(scrollPercent));
+    setScroll(calculateScroll);
   };
 
   useEffect(() => {
