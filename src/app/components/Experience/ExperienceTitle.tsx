@@ -1,4 +1,4 @@
-import ColorPeriod from '../ColorPeriod';
+import ColorPeriod from '../shared/ColorPeriod';
 
 interface ExperienceTitleProps {
   title: string;

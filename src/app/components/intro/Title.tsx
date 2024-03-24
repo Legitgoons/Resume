@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import ColorPeriod from '../ColorPeriod';
+import ColorPeriod from '../shared/ColorPeriod';
 
 import photo from '@/../public/assets/img/photo.webp';
 
