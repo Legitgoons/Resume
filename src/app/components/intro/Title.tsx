@@ -6,7 +6,7 @@ import photo from '@/../public/assets/img/photo.webp';
 
 export default function Title() {
   return (
-    <section className="flex flex-wrap-reverse">
+    <section className="flex flex-wrap-reverse justify-between">
       <h1 className="t1">
         가치를 만드는
         <br />
@@ -18,7 +18,7 @@ export default function Title() {
       <Image
         src={photo}
         alt="photo"
-        className="ml-6 w-44 self-center xl:w-48 2xl:ml-12 2xl:w-52"
+        className="mx-6 w-44 self-center xl:w-48 2xl:ml-12 2xl:w-52"
       />
     </section>
   );

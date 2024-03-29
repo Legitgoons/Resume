@@ -25,7 +25,7 @@ const otherProjects = await db
 
 export default function Home() {
   return (
-    <main className="my-12 flex w-4/5 max-w-3xl flex-col gap-y-12 break-keep md:w-2/3 lg:w-1/2 2xl:w-2/5">
+    <main className="my-12 flex w-4/5 max-w-3xl flex-col gap-y-12 break-keep lg:w-2/3 2xl:w-1/2">
       <Title />
       <Intro />
       <Education />
