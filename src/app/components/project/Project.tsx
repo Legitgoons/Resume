@@ -3,9 +3,6 @@ import Link from 'next/link';
 
 import { ProjectResponse } from '@/app/type/project';
 
-import BulletSentence from '../shared/BulletSentence';
-
-import DetailHeading from './DetailHeading';
 import ProjectDetail from './ProjectDetail';
 import ProjectSentenceList from './ProjectSentenceList';
 import ProjectTitle from './ProjectTitle';
@@ -18,16 +15,7 @@ export default function Project({ projectData }: ProjectProps) {
   return (
     <div className=" flex flex-col gap-y-12">
       {projectData.map(
-        ({
-          title,
-          period,
-          role,
-          titleLinks,
-          skills,
-          details,
-          reviews,
-          blog,
-        }) => (
+        ({ title, period, role, titleLinks, skills, details }) => (
           <article
             className="flex flex-col flex-wrap md:relative md:flex-row"
             key={title}
@@ -72,30 +60,6 @@ export default function Project({ projectData }: ProjectProps) {
                   <ProjectSentenceList sentences={detail.sentences} />
                 </ProjectDetail>
               ))}
-              <ProjectDetail title="KPT">
-                {reviews.map((review) => (
-                  <section key={review.title}>
-                    <h5 className="p1b">{review.title}</h5>
-                    {review.details.map((detail) => (
-                      <div key={detail.heading}>
-                        <DetailHeading>{detail.heading}</DetailHeading>
-                        <ul className="flex flex-col gap-y-2">
-                          <ProjectSentenceList sentences={detail.sentences} />
-                        </ul>
-                      </div>
-                    ))}
-                  </section>
-                ))}
-              </ProjectDetail>
-              {blog && (
-                <ProjectDetail title={blog.title}>
-                  {blog.links.map((link) => (
-                    <BulletSentence key={link.href}>
-                      <Link href={link.href}>{link.text}</Link>
-                    </BulletSentence>
-                  ))}
-                </ProjectDetail>
-              )}
             </section>
           </article>
         )
