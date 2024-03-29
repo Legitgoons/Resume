@@ -21,7 +21,7 @@ export const contactData: ContactItem[] = [
     },
   },
   {
-    icon: '🌐',
+    icon: '👨🏻‍💻',
     link: 'https://cksxkr5193.tistory.com',
     text: 'cksxkr5193.tistory.com',
   },
