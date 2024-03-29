@@ -1,5 +1,5 @@
 ## 개발목적
-#### 웹 포트폴리오 사이트입니다. Intro, Project, Experience 세 가지 부분으로 나뉘어져 있습니다.
+#### 이력서 사이트입니다. Intro, Project, Experience 세 가지 부분으로 나뉘어져 있습니다.
 - Intro
   - 자기소개와 제가 공부한 이력, 그리고 연락처와 관련 링크들을 적었습니다.
 - Project
