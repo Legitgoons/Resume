@@ -23,21 +23,6 @@ interface Detail {
   sentences: LinkSentence[];
 }
 
-interface ReviewDetail {
-  heading: string;
-  sentences: LinkSentence[];
-}
-
-interface Review {
-  title: string;
-  details: ReviewDetail[];
-}
-
-interface Blog {
-  title: string;
-  links: Link[];
-}
-
 /** Project
  * @param {string} title : 프로젝트 제목
  * @param {string} period : 진행 기간
@@ -45,8 +30,6 @@ interface Blog {
  * @param {Link[]} links : 제목 하단 링크
  * @param {Skills[]} skills: 프로젝트 사용 기술
  * @param {Detail[]} details : 프로젝트 상세 내역
- * @param {Review[]} reviews : 프로젝트 리뷰
- * @param {Blog} blog : 프로젝트 관련 게시글
  */
 
 export interface ProjectDefaultResponse extends WithId<Document> {
@@ -58,7 +41,5 @@ export interface ProjectDefaultResponse extends WithId<Document> {
 
 export interface ProjectResponse extends ProjectDefaultResponse {
   skills: Skills[];
-  reviews: Review[];
   role: string;
-  blog: Blog;
 }

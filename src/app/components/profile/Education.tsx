@@ -1,4 +1,4 @@
-import BulletSentence from '../BulletSentence';
+import BulletSentence from '../shared/BulletSentence';
 
 import Layout from './Layout';
 

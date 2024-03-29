@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import './globals.css';
-import Progressbar from './components/Progressbar';
+import Progressbar from './components/app/Progressbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
