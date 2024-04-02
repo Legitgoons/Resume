@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --white: hsl(210 40% 98%);
+  --black: #121212;
+
+  --background: white;
+  --foreground: var(--black);
+
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+}
+
+.dark {
+  --background: var(--black);
+  --foreground: var(--white);
+
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -14,6 +33,10 @@ a {
 
 a:visited {
   color: #135898;
+}
+
+.dark a:visited {
+  color: #61819f;
 }
 
 @font-face {
@@ -67,25 +90,25 @@ a:visited {
 }
 
 .p1b {
-  @apply leading-140 font-suit text-20 font-bold sm:text-24;
+  @apply font-suit text-20 font-bold leading-140 sm:text-24;
 }
 
 .p1r {
-  @apply leading-140 font-suit text-20 font-normal sm:text-24;
+  @apply font-suit text-20 font-normal leading-140 sm:text-24;
 }
 
 .p2b {
-  @apply leading-140 font-suit text-16 font-bold sm:text-20;
+  @apply font-suit text-16 font-bold leading-140 sm:text-20;
 }
 
 .p2r {
-  @apply leading-140 font-suit text-16 font-normal sm:text-20;
+  @apply font-suit text-16 font-normal leading-140 sm:text-20;
 }
 
 .p3b {
-  @apply leading-140 font-suit text-12 font-bold sm:text-16;
+  @apply font-suit text-12 font-bold leading-140 sm:text-16;
 }
 
 .p3r {
-  @apply leading-140 font-suit text-12 font-normal sm:text-16;
+  @apply font-suit text-12 font-normal leading-140 sm:text-16;
 }
