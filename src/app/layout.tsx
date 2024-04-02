@@ -4,8 +4,27 @@ import { Inter } from 'next/font/google';
 
 import './globals.css';
 import Progressbar from './components/app/Progressbar';
+import ThemeProvider from './components/provider/ThemeProvider';
 
 const inter = Inter({ subsets: ['latin'] });
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="kr">
+      <body className={inter.className}>
+        <ThemeProvider>
+          <Progressbar />
+          {children}
+          <Analytics />
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
 
 export const metadata: Metadata = {
   title: '가치를 만드는 FE 개발자 이의찬입니다',
@@ -66,18 +85,3 @@ export const metadata: Metadata = {
     },
   },
 };
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="kr">
-      <body className={inter.className}>
-        <Progressbar />
-        {children}
-        <Analytics />
-      </body>
-    </html>
-  );
-}
