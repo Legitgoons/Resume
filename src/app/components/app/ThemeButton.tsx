@@ -9,7 +9,8 @@ import LightIcon from '@/../public/assets/img/light-icon.svg';
 
 export default function ThemeButton() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { systemTheme, theme, setTheme } = useTheme();
+  const currentTheme = theme === 'system' ? systemTheme : theme;
 
   const themeChange = (nowTheme: string | undefined) => {
     if (nowTheme === 'dark') {
@@ -19,7 +20,7 @@ export default function ThemeButton() {
   };
 
   const themeButtonHandler = () => {
-    setTheme(themeChange(theme));
+    setTheme(themeChange(currentTheme));
   };
 
   useEffect(() => {
@@ -35,7 +36,7 @@ export default function ThemeButton() {
       aria-label="themeButton"
       className="my-4 flex size-8 items-center justify-center rounded-lg border-2 border-slate-700 bg-white md:fixed md:right-16 md:top-5"
     >
-      {theme !== undefined && theme === 'dark' ? <LightIcon /> : <DarkIcon />}
+      {currentTheme === 'dark' ? <LightIcon /> : <DarkIcon />}
     </button>
   );
 }
