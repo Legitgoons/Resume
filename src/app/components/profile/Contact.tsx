@@ -1,14 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { ContactItem } from '@/app/type/contact';
+import { ContactResponse } from '@/app/type/contact';
 
 import BulletSentence from '../shared/BulletSentence';
 
 import Layout from './Layout';
 
 interface ContactProps {
-  contactData: ContactItem[];
+  contactData: ContactResponse[];
 }
 
 export default function Contact({ contactData }: ContactProps) {
