@@ -1,10 +1,7 @@
-import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import './globals.css';
-import Progressbar from './components/app/Progressbar';
-import ThemeProvider from './components/provider/ThemeProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,13 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="kr">
-      <body className={inter.className}>
-        <ThemeProvider>
-          <Progressbar />
-          {children}
-          <Analytics />
-        </ThemeProvider>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
