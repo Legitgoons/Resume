@@ -22,7 +22,7 @@
 - Progress Bar를 사용해 분량 파악이 쉽도록 했습니다.
 - 프로젝트 title에 sticky 속성을 부여해 어떤 프로젝트를 보는지 직관적으로 파악할 수 있도록 했습니다.
 - 사용자의 접속 환경에 영향을 받지 않도록 모바일/PC를 모두 고려하여 반응형 디자인을 적용하였습니다.
-- Darkmode/lightmode 설정 버튼을 구현하고, 사용자가 기존의 경험을 이어갈 수 있도록 system option을 기본값으로 사용했습니다.
+- [DarkMode를 구현](https://cksxkr5193.tistory.com/54)하고, 사용자가 기존의 경험을 이어갈 수 있도록 system option을 기본값으로 사용했습니다.
 #### 가능한 많은 사람들이 볼 수 있도록
 - Naver Search Advisor와 Google Search console에 사이트를 등록하였습니다.
 - 서버 사이드 랜더링과 시멘틱 태그 사용, 상세하게 Metadata를 작성하는 등 [검색 엔진 최적화를 위해 노력](https://cksxkr5193.tistory.com/47)했습니다.
