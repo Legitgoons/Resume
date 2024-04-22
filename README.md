@@ -1,5 +1,5 @@
 ## 개발목적
-#### 이력서 사이트입니다. Intro, Project, Experience 세 가지 부분으로 나뉘어져 있습니다.
+#### 이력서 사이트입니다. Intro, Project, Experience & others 세 가지 부분으로 나뉘어져 있습니다.
 - Intro
   - 간략한 자기소개와 개발할 때 고려하는 점, 그리고 연락처를 작성했습니다.
 - Project
