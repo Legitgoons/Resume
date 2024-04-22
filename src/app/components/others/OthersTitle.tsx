@@ -1,14 +1,11 @@
 import ColorPeriod from '../shared/ColorPeriod';
 
-interface ExperienceTitleProps {
+interface OthersTitleProps {
   title: string;
   children: React.ReactNode;
 }
 
-export default function ExperienceTitle({
-  title,
-  children,
-}: ExperienceTitleProps) {
+export default function OthersTitle({ title, children }: OthersTitleProps) {
   return (
     <div className="mb-4 flex w-full flex-col items-start gap-y-3">
       <h3 className="h3b">
