@@ -4,17 +4,17 @@ import { connectDB } from '@/app/util/data';
 
 import Progressbar from './components/app/Progressbar';
 import ThemeButton from './components/app/ThemeButton';
-import Experience from './components/experience/Experience';
 import Intro from './components/intro/Intro';
 import Title from './components/intro/Title';
+import Experience from './components/others/Experience';
+import Others from './components/others/Others';
 import Contact from './components/profile/Contact';
-import Education from './components/profile/Education';
 import OtherProject from './components/project/OtherProject';
 import Project from './components/project/Project';
 import ThemeProvider from './components/provider/ThemeProvider';
 import ItemTitle from './components/shared/ItemTitle';
 import { ContactResponse } from './type/contact';
-import { ExperienceResponse } from './type/experience';
+import { OthersResponse, ExperienceResponse } from './type/others';
 import { ProjectDefaultResponse, ProjectResponse } from './type/project';
 
 const db = (await connectDB).db('Portfolio');
@@ -23,6 +23,7 @@ const contact = await db
   .find()
   .toArray();
 const exp = await db.collection<ExperienceResponse>('Exp').find().toArray();
+const others = await db.collection<OthersResponse>('Others').find().toArray();
 const projects = await db
   .collection<ProjectResponse>('Projects')
   .find()
@@ -40,7 +41,6 @@ export default function Home() {
       <main className="my-12 flex w-4/5 max-w-3xl flex-col gap-y-12 break-keep lg:w-2/3 2xl:w-1/2">
         <Title />
         <Intro />
-        <Education />
         <Contact contactData={contact} />
         <hr />
         <ItemTitle>Projects</ItemTitle>
@@ -53,6 +53,8 @@ export default function Home() {
         <hr />
         <ItemTitle>Experience</ItemTitle>
         <Experience expData={exp} />
+        <ItemTitle>Others</ItemTitle>
+        <Others othersData={others} />
       </main>
       <Analytics />
     </ThemeProvider>
